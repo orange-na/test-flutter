@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice/counter.dart';
 
 void main() {
   final col =
@@ -25,7 +26,7 @@ void main() {
         title: Text('Hello World'),
       ),
       body: Center(
-        child: con,
+        child: Counter(number: 999),
       ),
     ),
   );
