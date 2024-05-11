@@ -2,6 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:practice/counter.dart';
 
 void main() {
+  // 関数
+  handleClick() {
+    debugPrint('Hello World');
+  }
+
+  final btn = ElevatedButton(
+    onPressed: handleClick,
+    child: const Text('Click Me'),
+  );
+
   final col =
       Column(mainAxisAlignment: MainAxisAlignment.center, children: const [
     Text('Hello World'),
