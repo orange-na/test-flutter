@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:practice/counter.dart';
+import 'package:practice/page_a.dart';
+import 'package:practice/page_b.dart';
+import 'package:practice/page_c.dart';
 
-//　ツイートクラス
+//　Tweet Class
 class Tweet {
   final String name;
   final String text;
@@ -10,6 +13,7 @@ class Tweet {
   Tweet(this.name, this.text, this.image);
 }
 
+// Tweet Model
 final models = [
   Tweet('Taro', 'Hello World', 'assets/images/photo.jpg'),
   Tweet('Jiro', 'Hello World', 'assets/images/photo.jpg'),
@@ -133,6 +137,10 @@ void main() {
   final tweetWidgets = ListView.builder(
       itemBuilder: (c, i) => tweetToWidget(models[i]),
       itemCount: models.length);
+
+  final a = PageA();
+  final b = PageB();
+  final c = PageC();
 
   final app = MaterialApp(
     home: Scaffold(
